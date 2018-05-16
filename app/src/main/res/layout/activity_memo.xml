@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.sdie3.edcan_project.MemoActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/memo_ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#486BC7"
+        app:titleTextColor="#FFFFFF"
+        app:title="memo"
+        ></android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:choiceMode="singleChoice"></android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/to_input_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:translationZ="5dp"
+        android:textColor="#FFF"
+        android:background="@drawable/button"
+        android:text="새로운 할 일 추가하기"
+        android:onClick="OnClick"/>
+</LinearLayout>
